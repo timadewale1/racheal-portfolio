@@ -88,3 +88,162 @@ document.addEventListener("click", (e) => {
     styleSwitcher.classList.remove("show-switcher");
   }
 });
+
+var mixer = mixitup(".work-container", {
+  selectors: {
+    target: ".mix",
+  },
+  animation: {
+    duration: 300,
+  },
+});
+
+const linkWork = document.querySelectorAll(".work-item");
+function activeWork() {
+  linkWork.forEach((a) => {
+    a.classList.remove("active-work");
+  });
+  this.classList.add("active-work");
+}
+
+linkWork.forEach((a) => a.addEventListener("click", activeWork));
+
+const accordionItems = document.querySelectorAll(".resume-item");
+
+accordionItems.forEach((item) => {
+  const header = item.querySelector(".resume-header"),
+    content = item.querySelector(".resume-content"),
+    icon = item.querySelector(".resume-icon i");
+
+  header.addEventListener("click", () => {
+    const isOpen = item.classList.toggle("accordion-open");
+
+    content.style.height = isOpen ? content.scrollHeight + "px" : "0";
+    icon.className = isOpen ? "ri-subtract-line" : "ri-add-line";
+
+    accordionItems.forEach((otherItem) => {
+      if (
+        otherItem !== item &&
+        otherItem.classList.contains("accordion-open")
+      ) {
+        otherItem.querySelector(".resume-content").style.height = "0";
+        otherItem.querySelector(".resume-icon i").classList = "ri-add-line";
+        otherItem.classList.remove("accordion-open");
+      }
+    });
+  });
+});
+
+var servicesSwiper = new Swiper(".testimonial-swiper", {
+  spaceBetween: 32,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1208: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+const contactForm = document.getElementById("contact-form"),
+  contactName = document.getElementById("contact-name"),
+  contactEmail = document.getElementById("contact-email"),
+  contactSubject = document.getElementById("contact-subject"),
+  contactMessage = document.getElementById("contact-message"),
+  message = document.getElementById("message");
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  if (
+    contactName.value === "" ||
+    contactEmail.value === "" ||
+    contactSubject.value === "" ||
+    contactMessage.value === ""
+  ) {
+    message.classList.remove("color-first");
+    message.classList.add("color-red");
+    message.textContent = "Please fill all the input fields";
+
+    setTimeout(() => {
+      message.textContent = "";
+    }, 5000);
+  } else {
+    emailjs
+      .sendForm(
+        "service_xdgx2sr",
+        "template_1667jfw",
+        "#contact-form",
+        "27nO3py507aQHesaK"
+      )
+      .then(
+        () => {
+          message.classList.add("color-first");
+          message.textContent = "Message sent";
+
+          setTimeout(() => {
+            message.textContent = "";
+          }, 5000);
+        },
+        (error) => {
+          alert("Something went wrong, Please try again", error);
+        }
+      );
+    contactName.value = "";
+    contactEmail.value = "";
+    contactSubject.value = "";
+    contactMessage.value = "";
+  }
+};
+
+contactForm.addEventListener("submit", sendEmail);
+
+const scrollHeader = () => {
+  const header = document.getElementById("header");
+
+  this.scrollY >= 20
+    ? header.classList.add("bg-header")
+    : header.classList.remove("bg-header");
+};
+
+window.addEventListener("scroll", scrollHeader);
+
+const navLink = document.querySelectorAll(".nav-link");
+
+const linkAction = () => {
+  const navMenu = document.getElementById("nav-menu");
+
+  navToggle.classList.remove("animate-toggle");
+  navMenu.classList.remove("show-menu");
+};
+
+navLink.forEach((n) => n.addEventListener("click", linkAction));
+
+const sections = document.querySelectorAll("section[id]");
+
+const scrollActive = () => {
+  const scrollY = window.pageYOffset;
+
+  sections.forEach((current) => {
+    const sectionHeight = current.offsetHeight,
+      sectionTop = current.offsetTop - 58,
+      sectionId = current.getAttribute("id"),
+      sectionsClass = document.querySelector(
+        ".nav-menu a[href*=" + sectionId + "]"
+      );
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      sectionsClass.classList.add("active-link");
+    } else {
+      sectionsClass.classList.remove("active-link");
+    }
+  });
+};
+
+window.addEventListener("scroll", scrollActive);

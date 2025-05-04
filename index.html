@@ -17,32 +17,32 @@
     />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <nav class="nav container">
         <a href="" class="nav-logo">Racheal</a>
 
         <div class="nav-menu" id="nav-menu">
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="" class="nav-link">Home</a>
+              <a href="#home" class="nav-link active-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">Services</a>
+              <a href="#services" class="nav-link">Services</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">Skills</a>
+              <a href="#skills" class="nav-link">Skills</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">Work</a>
+              <a href="#work" class="nav-link">Work</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">Resume</a>
+              <a href="#resume" class="nav-link">Resume</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">Testimonials</a>
+              <a href="#testimonials" class="nav-link">Testimonials</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">Contact</a>
+              <a href="#contact" class="nav-link">Contact</a>
             </li>
           </ul>
           <div class="social-links">
@@ -56,6 +56,10 @@
               ><i class="ri-instagram-fill"></i
             ></a>
           </div>
+
+          <div class="section-deco deco-left header-deco">
+            <img src="assets/img/shape-1.png" alt="" class="shape" />
+          </div>
         </div>
 
         <div class="nav-button">
@@ -67,7 +71,7 @@
       </nav>
     </header>
     <main class="main">
-      <section class="home section">
+      <section class="home section" id="home">
         <div class="home-container container">
           <div class="home-content">
             <h2 class="home-subtitle">Hello, <span>My name is</span></h2>
@@ -122,10 +126,14 @@
               <a href="" class="home-link">My Skills</a>
             </div>
           </div>
+
+          <div class="section-deco deco-left">
+            <img src="assets/img/shape-1.png" alt="" class="shape" />
+          </div>
         </div>
       </section>
 
-      <section class="services section">
+      <section class="services section" id="services">
         <h2 class="section-title" data-title="My Services">What I Do</h2>
 
         <div class="container">
@@ -199,10 +207,13 @@
 
             <div class="swiper-pagination"></div>
           </div>
+          <div class="section-deco deco-right">
+            <img src="assets/img/shape-1.png" alt="" class="shape" />
+          </div>
         </div>
       </section>
 
-      <section class="skills section">
+      <section class="skills section" id="skills">
         <h2 class="section-title" data-title="My skills">
           Professional Skills
         </h2>
@@ -236,6 +247,7 @@
               <span class="skills-percentage" style="width: 85%;"></span>
             </div>
           </div>
+
           <div class="skills-item">
             <div class="skills-header">
               <h3 class="skills-name">Research</h3>
@@ -249,6 +261,7 @@
               <span class="skills-percentage" style="width: 85%;"></span>
             </div>
           </div>
+
           <div class="skills-item">
             <div class="skills-header">
               <h3 class="skills-name">Research</h3>
@@ -262,6 +275,7 @@
               <span class="skills-percentage" style="width: 85%;"></span>
             </div>
           </div>
+
           <div class="skills-item">
             <div class="skills-header">
               <h3 class="skills-name">Research</h3>
@@ -289,8 +303,518 @@
               <span class="skills-percentage" style="width: 85%;"></span>
             </div>
           </div>
+
+          <div class="section-deco deco-left">
+            <img src="assets/img/shape-1.png" alt="" class="shape" />
+          </div>
         </div>
       </section>
+
+      <section class="work section" id="work">
+        <h2 class="section-title" data-title="My Works">
+          Portfolio
+        </h2>
+
+        <div class="container">
+          <ul class="work-list">
+            <li class="work-item active-work" data-filter="all">All</li>
+            <li class="work-item" data-filter=".data">Data Analysis</li>
+            <li class="work-item" data-filter=".bleh">bleh bleh</li>
+            <li class="work-item" data-filter=".blah">blah blah</li>
+          </ul>
+
+          <div class="work-container grid">
+            <div class="mix data">
+              <div class="card">
+                <img src="assets/img/project1.jpeg" alt="" class="work-img" />
+
+                <h4 class="work-category">blah blah</h4>
+                <h3 class="work-title">blah blah</h3>
+                <p class="work-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  ex molestiae fuga dignissimos laborum provident perspiciatis
+                  voluptatibu
+                </p>
+                <a href="" class="link">
+                  View Work <i class="ri-arrow-right-line link-icon"></i>
+                </a>
+              </div>
+            </div>
+            <div class="mix data">
+              <div class="card">
+                <img src="assets/img/project1.jpeg" alt="" class="work-img" />
+
+                <h4 class="work-category">blah blah</h4>
+                <h3 class="work-title">blah blah</h3>
+                <p class="work-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  ex molestiae fuga dignissimos laborum provident perspiciatis
+                  voluptatibu
+                </p>
+                <a href="" class="link">
+                  View Work <i class="ri-arrow-right-line link-icon"></i>
+                </a>
+              </div>
+            </div>
+            <div class="mix bleh">
+              <div class="card">
+                <img src="assets/img/project1.jpeg" alt="" class="work-img" />
+
+                <h4 class="work-category">blah blah</h4>
+                <h3 class="work-title">blah blah</h3>
+                <p class="work-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  ex molestiae fuga dignissimos laborum provident perspiciatis
+                  voluptatibu
+                </p>
+                <a href="" class="link">
+                  View Work <i class="ri-arrow-right-line link-icon"></i>
+                </a>
+              </div>
+            </div>
+            <div class="mix bleh">
+              <div class="card">
+                <img src="assets/img/project1.jpeg" alt="" class="work-img" />
+
+                <h4 class="work-category">blah blah</h4>
+                <h3 class="work-title">blah blah</h3>
+                <p class="work-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  ex molestiae fuga dignissimos laborum provident perspiciatis
+                  voluptatibu
+                </p>
+                <a href="" class="link">
+                  View Work <i class="ri-arrow-right-line link-icon"></i>
+                </a>
+              </div>
+            </div>
+            <div class="mix blah">
+              <div class="card">
+                <img src="assets/img/project1.jpeg" alt="" class="work-img" />
+
+                <h4 class="work-category">blah blah</h4>
+                <h3 class="work-title">blah blah</h3>
+                <p class="work-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  ex molestiae fuga dignissimos laborum provident perspiciatis
+                  voluptatibu
+                </p>
+                <a href="" class="link">
+                  View Work <i class="ri-arrow-right-line link-icon"></i>
+                </a>
+              </div>
+            </div>
+            <div class="mix blah">
+              <div class="card">
+                <img src="assets/img/project1.jpeg" alt="" class="work-img" />
+
+                <h4 class="work-category">blah blah</h4>
+                <h3 class="work-title">blah blah</h3>
+                <p class="work-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  ex molestiae fuga dignissimos laborum provident perspiciatis
+                  voluptatibu
+                </p>
+                <a href="" class="link">
+                  View Work <i class="ri-arrow-right-line link-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-deco deco-right">
+            <img src="assets/img/shape-1.png" alt="" class="shape" />
+          </div>
+        </div>
+      </section>
+
+      <section class="resume section" id="resume">
+        <h2 class="section-title" data-title="My Resume">
+          Resume
+        </h2>
+
+        <div class="resume-container container grid">
+          <div class="resume-group">
+            <h3 class="resume-title">Education</h3>
+
+            <div class="resume-items">
+              <div class="resume-item">
+                <div class="resume-header">
+                  <h3 class="resume-header-title">blah blah blah</h3>
+                  <span class="resume-icon">
+                    <i class="ri-add-line"></i>
+                  </span>
+                </div>
+                <div class="resume-content">
+                  <div class="resume-content-header">
+                    <h3 class="resume-content-title">blah and blah</h3>
+                    <span class="resume-date">2020-2024</span>
+                  </div>
+
+                  <p class="resume-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odio ipsum aliquam ea dicta possimus repellendus ab
+                  </p>
+                </div>
+              </div>
+              <div class="resume-item">
+                <div class="resume-header">
+                  <h3 class="resume-header-title">blah blah blah</h3>
+                  <span class="resume-icon">
+                    <i class="ri-add-line"></i>
+                  </span>
+                </div>
+                <div class="resume-content">
+                  <div class="resume-content-header">
+                    <h3 class="resume-content-title">blah and blah</h3>
+                    <span class="resume-date">2020-2024</span>
+                  </div>
+
+                  <p class="resume-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odio ipsum aliquam ea dicta possimus repellendus ab
+                  </p>
+                </div>
+              </div>
+              <div class="resume-item">
+                <div class="resume-header">
+                  <h3 class="resume-header-title">blah blah blah</h3>
+                  <span class="resume-icon">
+                    <i class="ri-add-line"></i>
+                  </span>
+                </div>
+                <div class="resume-content">
+                  <div class="resume-content-header">
+                    <h3 class="resume-content-title">blah and blah</h3>
+                    <span class="resume-date">2020-2024</span>
+                  </div>
+
+                  <p class="resume-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odio ipsum aliquam ea dicta possimus repellendus ab
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="resume-group">
+            <h3 class="resume-title">Experience</h3>
+
+            <div class="resume-items">
+              <div class="resume-item">
+                <div class="resume-header">
+                  <h3 class="resume-header-title">blah blah blah</h3>
+                  <span class="resume-icon">
+                    <i class="ri-add-line"></i>
+                  </span>
+                </div>
+                <div class="resume-content">
+                  <div class="resume-content-header">
+                    <h3 class="resume-content-title">blah and blah</h3>
+                    <span class="resume-date">2020-2024</span>
+                  </div>
+
+                  <p class="resume-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odio ipsum aliquam ea dicta possimus repellendus ab
+                  </p>
+                </div>
+              </div>
+              <div class="resume-item">
+                <div class="resume-header">
+                  <h3 class="resume-header-title">blah blah blah</h3>
+                  <span class="resume-icon">
+                    <i class="ri-add-line"></i>
+                  </span>
+                </div>
+                <div class="resume-content">
+                  <div class="resume-content-header">
+                    <h3 class="resume-content-title">blah and blah</h3>
+                    <span class="resume-date">2020-2024</span>
+                  </div>
+
+                  <p class="resume-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odio ipsum aliquam ea dicta possimus repellendus ab
+                  </p>
+                </div>
+              </div>
+              <div class="resume-item">
+                <div class="resume-header">
+                  <h3 class="resume-header-title">blah blah blah</h3>
+                  <span class="resume-icon">
+                    <i class="ri-add-line"></i>
+                  </span>
+                </div>
+                <div class="resume-content">
+                  <div class="resume-content-header">
+                    <h3 class="resume-content-title">blah and blah</h3>
+                    <span class="resume-date">2020-2024</span>
+                  </div>
+
+                  <p class="resume-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odio ipsum aliquam ea dicta possimus repellendus ab
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-deco deco-left">
+            <img src="assets/img/shape-1.png" alt="" class="shape" />
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials section" id="testimonials">
+        <h2 class="section-title" data-title="What People Say">Testimonials</h2>
+
+        <div class="container">
+          <div class="swiper testimonial-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide card">
+                <div class="testimonial-icon">
+                  <i class="ri-double-quotes-r"></i>
+                </div>
+
+                <img
+                  src="assets/img/testimonial1.jpg"
+                  alt=""
+                  class="testimonial-img"
+                />
+
+                <p class="testimonial-description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Dolore repellat velit labor
+                </p>
+
+                <h3 class="testimonial-name">mrs Ogunmepon</h3>
+                <span class="testimonial-author">CEO ajanikoko</span>
+              </div>
+
+              <div class="swiper-slide card">
+                <div class="testimonial-icon">
+                  <i class="ri-double-quotes-r"></i>
+                </div>
+
+                <img
+                  src="assets/img/testimonial2.jpg"
+                  alt=""
+                  class="testimonial-img"
+                />
+
+                <p class="testimonial-description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Dolore repellat velit labor
+                </p>
+
+                <h3 class="testimonial-name">mrs Ogunmepon</h3>
+                <span class="testimonial-author">CEO ajanikoko</span>
+              </div>
+
+              <div class="swiper-slide card">
+                <div class="testimonial-icon">
+                  <i class="ri-double-quotes-r"></i>
+                </div>
+
+                <img
+                  src="assets/img/testimonial3.jpg"
+                  alt=""
+                  class="testimonial-img"
+                />
+
+                <p class="testimonial-description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Dolore repellat velit labor
+                </p>
+
+                <h3 class="testimonial-name">mrs Ogunmepon</h3>
+                <span class="testimonial-author">CEO ajanikoko</span>
+              </div>
+
+              <div class="swiper-slide card">
+                <div class="testimonial-icon">
+                  <i class="ri-double-quotes-r"></i>
+                </div>
+
+                <img
+                  src="assets/img/testimonial4.jpg"
+                  alt=""
+                  class="testimonial-img"
+                />
+
+                <p class="testimonial-description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Dolore repellat velit labor
+                </p>
+
+                <h3 class="testimonial-name">mrs Ogunmepon</h3>
+                <span class="testimonial-author">CEO ajanikoko</span>
+              </div>
+
+              <div class="swiper-slide card">
+                <div class="testimonial-icon">
+                  <i class="ri-double-quotes-r"></i>
+                </div>
+
+                <img
+                  src="assets/img/testimonial5.jpg"
+                  alt=""
+                  class="testimonial-img"
+                />
+
+                <p class="testimonial-description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Dolore repellat velit labor
+                </p>
+
+                <h3 class="testimonial-name">mrs Ogunmepon</h3>
+                <span class="testimonial-author">CEO ajanikoko</span>
+              </div>
+            </div>
+
+            <div class="section-deco deco-right">
+              <img src="assets/img/shape-1.png" alt="" class="shape" />
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <h2 class="section-title" data-title="Let's Work Together">
+          Contact Me
+        </h2>
+        <div class="contact-container container grid">
+          <div class="contact-content">
+            <div class="contact-card">
+              <span class="contact-icon">
+                <i class="ri-map-2-line"></i>
+              </span>
+              <div>
+                <h3 class="contact-title">Address:</h3>
+                <p class="contact-data">Abuja, Nigeria</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <span class="contact-icon">
+                <i class="ri-mail-line"></i>
+              </span>
+              <div>
+                <h3 class="contact-title">Email:</h3>
+                <p class="contact-data">ttttt@.....</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <span class="contact-icon">
+                <i class="ri-user-3-line"></i>
+              </span>
+              <div>
+                <h3 class="contact-title">Freelance</h3>
+                <p class="contact-data">Available</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <span class="contact-icon">
+                <i class="ri-contacts-book-2-line"></i>
+              </span>
+              <div>
+                <h3 class="contact-title">Phone:</h3>
+                <p class="contact-data">0701234566</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form grid" id="contact-form">
+            <div class="contact-form-group grid">
+              <div class="contact-form-div">
+                <label for="" class="contact-form label"
+                  >Your Name <b>*</b></label
+                >
+                <input
+                  type="text"
+                  name="name"
+                  class="contact-form-input"
+                  id="contact-name"
+                />
+              </div>
+
+              <div class="contact-form-div">
+                <label for="" class="contact-form label"
+                  >Your Email <b>*</b></label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  class="contact-form-input"
+                  id="contact-email"
+                />
+              </div>
+            </div>
+
+            <div class="contact-form-div">
+              <label for="" class="contact-form label"
+                >Your Subject <b>*</b></label
+              >
+              <input
+                type="text"
+                name="subject"
+                class="contact-form-input"
+                id="contact-subject"
+              />
+            </div>
+            <div class="contact-form-div">
+              <label for="" class="contact-form label"
+                >Your Message <b>*</b></label
+              >
+              <textarea
+                name="message"
+                class="contact-form-input contacr-form-area"
+                id="contact-message"
+              ></textarea>
+            </div>
+
+            <div class="contact-submit">
+              <span>
+                <b>*</b>let's work together
+                <button type="submit" class="btn">Send Message</button>
+              </span>
+            </div>
+            <p class="message" id="message"></p>
+          </form>
+
+          <div class="section-deco deco-left">
+            <img src="assets/img/shape-1.png" alt="" class="shape" />
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-container container">
+          <div class="footer-socials social-links">
+            <a href="" target="_blank" class="social-link"
+              ><i class="ri-twitter-fill"></i
+            ></a>
+            <a href="" target="_blank" class="social-link"
+              ><i class="ri-linkedin-fill"></i
+            ></a>
+            <a href="" target="_blank" class="social-link"
+              ><i class="ri-instagram-fill"></i
+            ></a>
+          </div>
+
+          <p class="footer-copyright">
+            @2025 <span>Racheal</span>. All Rights Reserved
+          </p>
+
+          <p class="footer-copyright">Developed by <span>ADE.T</span></p>
+        </div>
+      </footer>
     </main>
 
     <div class="style-switcher" id="style-switcher">
@@ -358,6 +882,13 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/mixitup.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
 
     <script src="js/script.js"></script>
   </body>
